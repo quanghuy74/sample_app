@@ -35,7 +35,17 @@ vi:
   contact_param_link: "trang liên hệ."
 
   sign_up: "Đăng ký"
-  sign_up_content: "Trang nay có thể đăng ký tài khoản mới"
+  the_form_contains: "biểu mẩu chứa"
+  error: 
+    one: "1 lỗi"
+    other: "%{count} lỗi"
+  account:
+    name: "Tên"
+    email: "Email"
+    password: "Mật khẩu"
+    confirmation: "Xác nhận mật khẩu"
+    create_account: "Tạo tài khoản"
+    not_find_account: "Không tìm thấy User"
 
   sign_up_now: "Đăng ký ngay!"
   tutorial: "Ruby on Rails Tutorial"
