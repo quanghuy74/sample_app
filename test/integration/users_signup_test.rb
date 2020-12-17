@@ -1,6 +1,6 @@
 require "test_helper"
 
-class UsersControllerTest < ActionDispatch::IntegrationTest
+class UsersSignupTest < ActionDispatch::IntegrationTest
   test "invalid signup information" do
     get signup_path
     assert_no_difference "User.count" do
@@ -27,5 +27,4 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
     assert_template "users/show"
     assert_not flash.FILL_IN
     end
-
 end

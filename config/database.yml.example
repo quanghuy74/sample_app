@@ -1,12 +1,12 @@
 default: &default
-  adapter:
+  adapter: 
   pool: 
   timeout: 5000
 
 development:
   <<: *default
   database: 
-  
+
 test:
   <<: *default
   database: 
@@ -14,3 +14,11 @@ test:
 production:
   <<: *default
   database: 
+
+production:
+  adapter: 
+  encoding: 
+
+  database: 
+  username: 
+  password: 
