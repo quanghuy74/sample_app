@@ -34,6 +34,9 @@ vi:
   contact_param_content: "Liên hệ với Hướng dẫn Ruby on Rails về ứng dụng mẫu tại"
   contact_param_link: "trang liên hệ."
 
+  sign_up: "Đăng ký"
+  sign_up_content: "Trang nay có thể đăng ký tài khoản mới"
+
   sign_up_now: "Đăng ký ngay!"
   tutorial: "Ruby on Rails Tutorial"
   author: "Michael Hartl"
