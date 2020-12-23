@@ -5,6 +5,21 @@ $color-white : #fff;
 $color-gray : #555;
 $color-black : #222;
 $color-smoke-white: #eaeaea;
+$color-red: red;
+
+@mixin box_sizing {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.debug_dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+  @include box_sizing;
+}
 
 /* universal */
 body {
@@ -93,4 +108,31 @@ footer ul {
 footer ul li {
   float: left;
   margin-left: 15px;
+}
+
+/* forms */
+input,
+textarea,
+select,
+.uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  margin-bottom: 15px;
+  @include box_sizing;
+}
+input {
+  height: auto !important;
+}
+#error_explanation {
+  color: $color-red;
+  ul {
+    color: $color-red;
+    margin: 0 0 30px 0;
+  }
+}
+.field_with_errors {
+  @extend .has-error;
+  .form-control {
+    color: $state-danger-text;
+  }
 }
