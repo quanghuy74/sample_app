@@ -47,6 +47,19 @@ vi:
     create_account: "Tạo tài khoản"
     not_find_account: "Không tìm thấy User"
 
+  user_login:
+    log_in: "Đăng nhập"
+    email: "Email"
+    password: "Mật khẩu"
+    new_user: "User mới ? "
+    signup_now: "Đăng ký ngay!"
+    invalid_user: "Email & mật khẩu không hợp lệ !!"
+    account: "Tài khoản"
+    profile: "Thông tin cá nhân"
+    setting: "Cài đặt"
+    log_out: "Đăng xuất"
+    us: "Người dùng"
+
   sign_up_now: "Đăng ký ngay!"
   tutorial: "Ruby on Rails Tutorial"
   author: "Michael Hartl"

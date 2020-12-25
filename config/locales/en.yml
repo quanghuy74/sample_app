@@ -48,6 +48,19 @@ en:
     create_account: "Create my account"
     not_find_account: "Can't find User"
     error: "error"
+
+  user_login:
+    log_in: "Log in"
+    email: "Email"
+    password: "Password"
+    new_user: "New User ? "
+    signup_now: "Sign up now!"
+    invalid_user: "Invalid email/password combination"
+    account: "Account"
+    profile: "Profile"
+    setting: "Settings"
+    log_out: "Log out"
+    us: "Users"
     
   sign_up_now: "Sign up now!"
   tutorial: "Ruby on Rails Tutorial"
