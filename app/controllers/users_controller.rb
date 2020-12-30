@@ -1,10 +1,14 @@
 class UsersController < ApplicationController
-  def show
-    return if @user = User.find_by(id: params[:id])
+  before_action :logged_in_user, except: %i(show new create)
+  before_action :find_user, except: %i(index new create correct_user)
+  before_action :correct_user, only: %i(edit update)
+  before_action :admin_user, only: %i(destroy)
 
-    flash[:warning] = t "account.not_find_account"
-    redirect_to signup_path
+  def index
+    @users = User.paginate page: params[:page]
   end
+
+  def show; end
 
   def new
     @user = User.new
@@ -20,10 +24,60 @@ class UsersController < ApplicationController
     end
   end
 
+  def edit; end
+
+  def update
+    if @user.update user_params
+      flash[:success] = t "user_edit.success"
+      redirect_to @user
+    else
+      flash.now[:danger] = t "edit_user.fail"
+      render :edit
+    end
+  end
+
+  def destroy
+    if @user.destroy
+      flash[:success] = t "user_delete.deleted"
+    else
+      flash[:danger] = t "edit_delete.fail"
+    end
+    redirect_to users_path
+  end
+
   private
 
   def user_params
     params.require(:user).permit(:name, :email, :password,
                                  :password_confirmation)
+  end
+
+  def logged_in_user
+    return if logged_in?
+
+    store_location
+    flash[:danger] = t "user_login.please_login"
+    redirect_to login_path
+  end
+
+  def correct_user
+    return if current_user?(@user)
+
+    flash[:danger] = t "user_edit.correct_user"
+    redirect_to(root_url)
+  end
+
+  def admin_user
+    return if current_user.admin?
+
+    flash[:danger] = t "user_delete.not_admin"
+    redirect_to(root_url)
+  end
+
+  def find_user
+    return if @user = User.find_by(id: params[:id])
+
+    flash[:warning] = t "account.not_find_account"
+    redirect_to root_path
   end
 end

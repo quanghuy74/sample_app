@@ -5,3 +5,7 @@ user:
     max_length: 255
   password:
     min_length: 6
+  option:
+    size: 80
+  image:
+    size: 50

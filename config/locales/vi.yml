@@ -10,6 +10,8 @@ vi:
   login: "Đăng nhập"
   contact: "Liên Hệ"
   about: "Giới thiệu"
+  index: "Tất cả người dùng"
+
   home_title: "Chào mừng đến với ứng dụng mẫu"
   home_param_content_1: "Đây là trang chủ "
   home_param_content_2: "ứng dụng mẫu"
@@ -60,6 +62,24 @@ vi:
     log_out: "Đăng xuất"
     us: "Người dùng"
     remember_me: "Ghi nhớ trên thiết bị này"
+    please_login: "Please log in."
+
+
+  user_edit:
+    content_1: "Cập nhật thông tin của bạn"
+    title: "Sửa tài khoản"
+    save_changes: "lưu thay đổi"
+    success: "Cập nhật thành công"
+    fail: "Cập nhật thất bại"
+    correct_user: "bạn không có quyền"
+    change: "thay đổi"
+
+  user_delete: 
+    confirm: "Bạn có chắc không?"
+    btn: "Xóa"
+    deleted: "Đã xóa người dùng"
+    fail: "Xóa thất bại"
+    not_admin: "bạn không có quyền"
 
   sign_up_now: "Đăng ký ngay!"
   tutorial: "Ruby on Rails Tutorial"

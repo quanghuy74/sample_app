@@ -10,6 +10,7 @@ en:
   help: "Help"
   login: "Login"
   about: "About"
+  index: "All users"
 
   home_title: "Welcome to Sample App"
   home_param_content_1: "This is the home page for the"
@@ -37,9 +38,11 @@ en:
   
   sign_up: "Sign up"
   the_form_contains: "the form contains"
+  
   error: 
     one: "1 error"
     other: "%{count} errors"
+
   account:
     name: "Name"
     email: "Email"
@@ -62,6 +65,26 @@ en:
     log_out: "Log out"
     us: "Users"
     remember_me: "Remember me on this computer"
+    please_login: "Please log in."
+
+  user_edit:
+    content_1: "Update your profile"
+    title: "Edit user"
+    save_changes: "Save changes"
+    success: "Profile updated"
+    fail: "Profile don't update"
+    correct_user: "you are incorrect user"
+    change: "change"
+
+
+  user_delete: 
+    confirm: "You sure?"
+    btn: "Delete"
+    deleted: "User deleted"
+    fail: "User don't delete"
+    not_admin: "you isn't admin"
+
+
     
   sign_up_now: "Sign up now!"
   tutorial: "Ruby on Rails Tutorial"
