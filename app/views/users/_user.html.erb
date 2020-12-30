@@ -1,0 +1,6 @@
+<li>
+  <%= gravatar_for user, size: Settings.user.image.size %>
+  <%= link_to user.name, user %>
+
+  <%= check_permit user %>
+</li>
