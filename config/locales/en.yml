@@ -1,4 +1,3 @@
-
 en:
   title:
     title_404: "The page you were looking for doesn't exist (404)"
@@ -6,6 +5,7 @@ en:
     title_500: "We're sorry, but something went wrong (500)"
     main_title: "Sample App"
     base_title: "Ruby on Rails Tutorial Sample App"
+
   home: "Home"
   help: "Help"
   login: "Login"
@@ -66,6 +66,7 @@ en:
     us: "Users"
     remember_me: "Remember me on this computer"
     please_login: "Please log in."
+    forget_password: "(forgot password)"
 
   user_edit:
     content_1: "Update your profile"
@@ -91,7 +92,22 @@ en:
     success: "Account activated!"
     fail: "Invalid activation link"
     not_activate: "Account not activated. Check your email for the activation link."
-
+  
+  user_reset_password:
+    email_not_found: "Email address not found"
+    email_sent: "Email sent with password reset instructions"
+    title: "Forgot password"
+    submit: "Submit"
+    success: "Password has been reset."
+    pw_empty: "Password can't be blank"
+    pw_reset: "Password reset"
+    content_1: "To reset your password click the link below:"
+    content_2: "This link will expire in two hours."
+    content_3: "If you did not request your password to be reset,
+      please ignore this email and your password will stay as it is."
+    incorrect_user: "An authentication error has occurred"
+    
+    
   sign_up_now: "Sign up now!"
   tutorial: "Ruby on Rails Tutorial"
   author: "Michael Hartl"
