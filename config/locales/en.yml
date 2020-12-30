@@ -61,6 +61,7 @@ en:
     setting: "Settings"
     log_out: "Log out"
     us: "Users"
+    remember_me: "Remember me on this computer"
     
   sign_up_now: "Sign up now!"
   tutorial: "Ruby on Rails Tutorial"
