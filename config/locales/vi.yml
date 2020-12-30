@@ -9,7 +9,6 @@ vi:
   home: "Trang chủ"
   help: "Trợ giúp"
   login: "Đăng nhập"
-  contact: "Liên Hệ"
   about: "Giới thiệu"
   index: "Tất cả người dùng"
 
@@ -39,6 +38,7 @@ vi:
 
   sign_up: "Đăng ký"
   the_form_contains: "biểu mẩu chứa"
+
   error: 
     one: "1 lỗi"
     other: "%{count} lỗi"
@@ -99,7 +99,6 @@ vi:
     title: "Quên mật khẩu"
     submit: "Xác nhận"
     success: "Mật khẩu đã được cập nhật"
-    success: "Mật khẩu đã được cập nhật"
     pw_empty: "Mật khẩu không được để trống"
     pw_reset: "khôi phục mật khẩu"
     content_1: "để khôi phục mật khẩu vui lòng kick vào liên kết phía dưới"
@@ -109,21 +108,29 @@ vi:
     incorrect_user: "Đã xảy ra lỗi xác thực"
 
   microposts:
+    posted: "Đã đăng"
     created: "Bài viết đã được tạo!"
     deleted: "Đã xóa bài viết"
-    posted: "Đã đăng"
-    post: "Post"
+    post: "Đăng"
     ago: " trước."
     title: "microposts(%{total})"
     feed: "bài viết"
+    micropost: "Bài viết"
     compose_new_micropost: "soạn bài viết mới"
     delete_fail: "Bài viết chưa được xóa" 
     error:
       image_format: "file chỉ chấp nhận là ảnh"
       size: "ảnh chỉ có thể dưới 5MB"
+    
   user:
     view_my_profile: "xem trang cá nhân của tôi"
     incorrect_user: "bạn không có quyền"
+    not_found: "Không tìm thấy người dùng"
+    relationship_not_found: "Không tìm thấy quan hệ"
+    following: "Người đang theo dỏi"
+    followers: "Người theo dỏi"
+    follow: "Theo dỏi"
+    unfollow: "Bỏ theo dỏi"
 
   btn:
     delete: "xóa"
@@ -138,6 +145,5 @@ vi:
   footer_param_content_2: "bởi "
   english: "English"
   vietnamese: "Tiếng Việt"
-  about: "Giới thiệu"
   contact: "Liên hệ"
   news: "Tin tức"
