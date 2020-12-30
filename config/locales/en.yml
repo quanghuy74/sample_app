@@ -126,6 +126,12 @@ en:
   user:
     view_my_profile: "view my profile"
     incorrect_user: "you are an correct user"
+    not_found: "user not found"
+    relationship_not_found: "relationship not found"
+    following: "following"
+    followers: "followers"
+    follow: "Follow"
+    unfollow: "Unfollow"
 
   btn:
     delete: "Delete"

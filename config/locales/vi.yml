@@ -112,7 +112,7 @@ vi:
     created: "Bài viết đã được tạo!"
     deleted: "Đã xóa bài viết"
     posted: "Đã đăng"
-    post: "Post"
+    post: "Đăng"
     ago: " trước."
     title: "microposts(%{total})"
     feed: "bài viết"
@@ -121,15 +121,23 @@ vi:
     error:
       image_format: "file chỉ chấp nhận là ảnh"
       size: "ảnh chỉ có thể dưới 5MB"
+    
   user:
     view_my_profile: "xem trang cá nhân của tôi"
     incorrect_user: "bạn không có quyền"
+    not_found: "Không tìm thấy người dùng"
+    relationship_not_found: "Không tìm thấy quan hệ"
 
   btn:
     delete: "xóa"
 
   alert:
     you_sure: "bạn chắc chứ?"
+
+  microposts:
+    posted: "Đã đăng"
+    ago: " trước."
+    title: "microposts(%{total})"
 
   sign_up_now: "Đăng ký ngay!"
   tutorial: "Ruby on Rails Tutorial"
