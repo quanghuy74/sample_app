@@ -59,6 +59,7 @@ vi:
     setting: "Cài đặt"
     log_out: "Đăng xuất"
     us: "Người dùng"
+    remember_me: "Ghi nhớ trên thiết bị này"
 
   sign_up_now: "Đăng ký ngay!"
   tutorial: "Ruby on Rails Tutorial"
