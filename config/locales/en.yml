@@ -107,7 +107,6 @@ en:
       please ignore this email and your password will stay as it is."
     incorrect_user: "An authentication error has occurred"
     
-    
   microposts:
     posted: "Posted"
     created: "Micropost created!"
@@ -126,6 +125,12 @@ en:
   user:
     view_my_profile: "view my profile"
     incorrect_user: "you are an correct user"
+    not_found: "user not found"
+    relationship_not_found: "relationship not found"
+    following: "Following"
+    followers: "Followers"
+    follow: "Follow"
+    unfollow: "Unfollow"
 
   btn:
     delete: "Delete"
@@ -140,6 +145,5 @@ en:
   footer_param_content_2: "by "
   english: "Tiếng Anh"
   vietnamese: "Vietnamese"
-  about: "About"
   contact: "Contact"
   news: "News"

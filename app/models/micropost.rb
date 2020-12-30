@@ -2,6 +2,7 @@ class Micropost < ApplicationRecord
   belongs_to :user
 
   scope :recent_posts, ->{order created_at: :desc}
+  scope :where_user_id, ->(id){where user_id: id}
 
   has_one_attached :image
 
