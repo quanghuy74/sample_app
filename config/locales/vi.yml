@@ -5,6 +5,7 @@ vi:
     title_500: "Chúng tôi xin lỗi, nhưng đã xảy ra lỗi (500)"
     main_title: "Ứng dụng mẫu"
     base_title: "Ứng dụng mẫu - Ruby on Rails Tutorial"
+
   home: "Trang chủ"
   help: "Trợ giúp"
   login: "Đăng nhập"
@@ -63,7 +64,7 @@ vi:
     us: "Người dùng"
     remember_me: "Ghi nhớ trên thiết bị này"
     please_login: "Please log in."
-
+    forget_password: "(Quên mật khẩu)"
 
   user_edit:
     content_1: "Cập nhật thông tin của bạn"
@@ -89,6 +90,22 @@ vi:
       success: "Tài khoản đã được kích hoạt!"
       fail: "Liên kết kích hoạt không hợp lệ"
       not_activate: "Tài khoản chưa được kích hoạt. Kiểm tra liên kết kích hoạt trong email của bạn."
+
+  user_reset_password:
+    email_not_found: "Địa chỉ email không tồn tại"
+    email_sent: "Email được gửi kèm theo hướng dẫn đặt lại mật khẩu"
+    title: "Quên mật khẩu"
+    submit: "Xác nhận"
+    success: "Mật khẩu đã được cập nhật"
+    success: "Mật khẩu đã được cập nhật"
+    pw_empty: "Mật khẩu không được để trống"
+    pw_reset: "khôi phục mật khẩu"
+    content_1: "để khôi phục mật khẩu vui lòng kick vào liên kết phía dưới"
+    content_2: "liên kết sẽ hết hạn trong 2 giờ"
+    content_3: "nếu bạn không thực hiện hành động này,
+      vui lòng bỏ qua email này và mật khẩủ của bản vẫn như củ"
+    incorrect_user: "Đã xảy ra lỗi xác thực"
+
 
   sign_up_now: "Đăng ký ngay!"
   tutorial: "Ruby on Rails Tutorial"
