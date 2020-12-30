@@ -76,7 +76,6 @@ en:
     correct_user: "you are incorrect user"
     change: "change"
 
-
   user_delete: 
     confirm: "You sure?"
     btn: "Delete"
@@ -84,8 +83,15 @@ en:
     fail: "User don't delete"
     not_admin: "you isn't admin"
 
+  email_activate:
+    greeting: "Hi"
+    content: "Welcome to the Sample App! Click on the link below to activate your account:"
+    activate: "Activate"
+    check: "Please check your email to activate your account."
+    success: "Account activated!"
+    fail: "Invalid activation link"
+    not_activate: "Account not activated. Check your email for the activation link."
 
-    
   sign_up_now: "Sign up now!"
   tutorial: "Ruby on Rails Tutorial"
   author: "Michael Hartl"

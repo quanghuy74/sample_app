@@ -11,6 +11,6 @@ module UsersHelper
     return unless current_user.admin? && !current_user?(user)
 
     link_to t("user_delete.btn"), user, method: :delete,
-      data: { confirm: t("user_delete.confirm") }
+      data: {confirm: t("user_delete.confirm")}
   end
 end

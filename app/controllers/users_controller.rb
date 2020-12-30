@@ -1,8 +1,8 @@
 class UsersController < ApplicationController
   before_action :logged_in_user, except: %i(show new create)
-  before_action :find_user, except: %i(index new create correct_user)
+  before_action :find_user, except: %i(index new create)
   before_action :correct_user, only: %i(edit update)
-  before_action :admin_user, only: %i(destroy)
+  before_action :admin_user, only: :destroy
 
   def index
     @users = User.paginate page: params[:page]
@@ -17,8 +17,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      flash[:success] = t "home_title"
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t "email_active.check"
+      redirect_to root_url
     else
       render :new
     end
@@ -48,8 +49,8 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:name, :email, :password,
-                                 :password_confirmation)
+    params.require(:user)
+          .permit :name, :email, :password, :password_confirmation
   end
 
   def logged_in_user
@@ -61,17 +62,17 @@ class UsersController < ApplicationController
   end
 
   def correct_user
-    return if current_user?(@user)
+    return if current_user? @user
 
     flash[:danger] = t "user_edit.correct_user"
-    redirect_to(root_url)
+    redirect_to root_url
   end
 
   def admin_user
     return if current_user.admin?
 
     flash[:danger] = t "user_delete.not_admin"
-    redirect_to(root_url)
+    redirect_to root_url
   end
 
   def find_user
