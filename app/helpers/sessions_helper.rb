@@ -49,4 +49,15 @@ module SessionsHelper
   def store_location
     session[:forwarding_url] = request.original_url if request.get?
   end
+
+  def check_user_activate user
+    if user.activated?
+      log_in user
+      params[:session][:remember_me] == "1" ? remember(user) : forget(user)
+      redirect_back_or user
+    else
+      flash[:warning] = t "email_activate.not_activate"
+      redirect_to root_url
+    end
+  end
 end

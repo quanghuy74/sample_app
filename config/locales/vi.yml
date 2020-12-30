@@ -81,6 +81,15 @@ vi:
     fail: "Xóa thất bại"
     not_admin: "bạn không có quyền"
 
+  email_activate:
+      greeting: "Xin chào"
+      content: "Chào mưng đến với Sample App! nhấn vào link bên dưới để kích hoạt tài khoản của bạn:"
+      activate: "Kích hoạt"
+      check: "Vui lòng kiểm tra email của bạn để kích hoạt tài khoản."
+      success: "Tài khoản đã được kích hoạt!"
+      fail: "Liên kết kích hoạt không hợp lệ"
+      not_activate: "Tài khoản chưa được kích hoạt. Kiểm tra liên kết kích hoạt trong email của bạn."
+
   sign_up_now: "Đăng ký ngay!"
   tutorial: "Ruby on Rails Tutorial"
   author: "Michael Hartl"
