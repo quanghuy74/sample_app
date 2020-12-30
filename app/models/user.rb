@@ -6,6 +6,8 @@ class User < ApplicationRecord
   before_save :downcase_email
   before_create :create_activation_digest
 
+  has_many :microposts, dependent: :destroy
+
   validates :name, presence: true,
     length: {maximum: Settings.user.name.max_length}
   validates :email, presence: true,
@@ -49,6 +51,10 @@ class User < ApplicationRecord
 
   def send_password_reset_email
     UserMailer.password_reset(self).deliver_now
+  end
+
+  def feed
+    microposts
   end
 
   class << self

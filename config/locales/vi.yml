@@ -42,6 +42,7 @@ vi:
   error: 
     one: "1 lỗi"
     other: "%{count} lỗi"
+
   account:
     name: "Tên"
     email: "Email"
@@ -49,6 +50,7 @@ vi:
     confirmation: "Xác nhận mật khẩu"
     create_account: "Tạo tài khoản"
     not_find_account: "Không tìm thấy User"
+    update_password: "Cập nhật mật khẩu"
 
   user_login:
     log_in: "Đăng nhập"
@@ -106,6 +108,28 @@ vi:
       vui lòng bỏ qua email này và mật khẩủ của bản vẫn như củ"
     incorrect_user: "Đã xảy ra lỗi xác thực"
 
+  microposts:
+    created: "Bài viết đã được tạo!"
+    deleted: "Đã xóa bài viết"
+    posted: "Đã đăng"
+    post: "Post"
+    ago: " trước."
+    title: "microposts(%{total})"
+    feed: "bài viết"
+    compose_new_micropost: "soạn bài viết mới"
+    delete_fail: "Bài viết chưa được xóa" 
+    error:
+      image_format: "file chỉ chấp nhận là ảnh"
+      size: "ảnh chỉ có thể dưới 5MB"
+  user:
+    view_my_profile: "xem trang cá nhân của tôi"
+    incorrect_user: "bạn không có quyền"
+
+  btn:
+    delete: "xóa"
+
+  alert:
+    you_sure: "bạn chắc chứ?"
 
   sign_up_now: "Đăng ký ngay!"
   tutorial: "Ruby on Rails Tutorial"

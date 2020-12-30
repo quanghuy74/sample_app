@@ -8,7 +8,10 @@ class UsersController < ApplicationController
     @users = User.paginate page: params[:page]
   end
 
-  def show; end
+  def show
+    @microposts = @user.microposts.paginate(page: params[:page],
+      per_page: Settings.page.per_page)
+  end
 
   def new
     @user = User.new

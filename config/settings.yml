@@ -9,3 +9,8 @@ user:
     size: 80
   image:
     size: 50
+    max_size: 5
+  id: 
+    max_length: 140
+page: 
+  per_page: 20

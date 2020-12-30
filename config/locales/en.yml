@@ -50,7 +50,7 @@ en:
     confirmation: "Confirmation"
     create_account: "Create my account"
     not_find_account: "Can't find User"
-    error: "error"
+    update_password: "Update password"
 
   user_login:
     log_in: "Log in"
@@ -108,6 +108,31 @@ en:
     incorrect_user: "An authentication error has occurred"
     
     
+  microposts:
+    posted: "Posted"
+    created: "Micropost created!"
+    deleted: "Micropost deleted"
+    post: "Post"
+    ago: " ago."
+    title: "microposts(%{total})"
+    feed: "Micropost Feed"
+    micropost: "micropost"
+    compose_new_micropost: "Compose new micropost..."
+    delete_fail: "the micropost has not been deleted"
+    error:
+      image_format: "must be a valid image format"
+      size: "should be less than 5MB"
+  
+  user:
+    view_my_profile: "view my profile"
+    incorrect_user: "you are an correct user"
+
+  btn:
+    delete: "Delete"
+
+  alert:
+    you_sure: "You sure?"
+
   sign_up_now: "Sign up now!"
   tutorial: "Ruby on Rails Tutorial"
   author: "Michael Hartl"
